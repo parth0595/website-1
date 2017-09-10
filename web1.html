@@ -41,10 +41,13 @@
       padding-top: 70px;
       padding-bottom: 70px;
   }
+  
+	.navbar-nav > .dropdown-menu { background-color: #FF0000; }
   .navbar {
-	height:12%;		 
-    width: 100%;
-    position: fixed;
+	
+	  width: 100%;
+    box-shadow: 0 10px 8px -8px #999;
+	position:fixed;
     top: 0;
       padding-top: 15px;
       padding-bottom: 15px;
@@ -59,29 +62,7 @@
       color: #1abc9c !important;
   }
 
-  #myCarousel
-  {
-    margin-left: 200px;;
-  }
-  #myCarousel1
-  {
-    margin-left: 750px;
-    margin-top: -180px;
-    }
-    #myCarousel2
-    {
-      margin-left: 200px;
-      margin-top: 20px;
-      }
-      #myCarousel3
-      {
-        margin-left: 750px;
-        margin-top: -180px;
-        }
-        /*.container-fluid bg-4 text-center{
-          position: absolute;
-          bottom: 0;
-        }*/
+  
         .col-md-6 img{
           border:4px black solid;
           border-radius: 50%;
@@ -136,13 +117,23 @@
             margin-top: 5%;
             z-index: 2;
           }
+		  #myCarousel{
+		  width:30%;
+		  overflow:hidden;
+		  border-radius:50%;
+		  }
+		  #myCarousel img{
+			width:80%;
+			border-radius:50%;
+			border:7px solid black;
+		  }
 
   </style>
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -150,13 +141,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Moz://a Club UCOE</a>
+      <a class="navbar-brand" href="#"><strong>Moz://a Club UCOE</strong></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#who">WHO?</a></li>
-        <li><a href="#moto">OUR MOTO!</a></li>
-        <li><a href="#team">About Us?</a></li>
+        <li><a href="#who"><strong>WHO?</strong></a></li>
+        <li><a href="#moto"><strong>OUR MOTO!</strong></a></li>
+        <li><a href="#team"><strong>About Us?</strong></a></li>
       </ul>
     </div>
   </div>
@@ -250,6 +241,9 @@
 
 <p><br></p>
 <button type="button" class="btn btn-info " onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdFvJNg_wOmHtKUV8dYGy_rhMCqQnWJOnD_zmZVQBwbaf_bZQ/viewform?usp=sf_link';" ><i class="fa fa-file-text-o"></i> Be a Member!</button>
+
+
+
     <div class="row" id="abc">
       <div class="col-sm-4">
         <a href=""><img src="gurnoor.jpg" class="img-responsive margin" style="width:70%" alt="Image">
